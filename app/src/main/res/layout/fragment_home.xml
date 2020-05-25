@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bruce_li"
+    android:id="@+id/home_container"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="9dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_white_bg"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginVertical="8dp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="28sp"
+  />
+        <TextView
+            android:id="@+id/cur_date_tv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="19sp"
+            android:gravity="end"
+            android:layout_height="wrap_content"/>
+</LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/best_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>

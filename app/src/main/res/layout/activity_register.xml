@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="30dp"
+    tools:context=".RegisterActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="User Information"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="40dp"/>
+    <EditText
+        android:id="@+id/firstname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+
+        />
+    <EditText
+        android:id="@+id/surname_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surname"
+        />
+    <RadioGroup
+        android:id="@+id/gender_radio"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:checkedButton="@id/male_bt"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Gender:"
+            />
+        <RadioButton
+            android:id="@+id/male_bt"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/female_bt"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/address_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Address"
+
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:textSize="20sp"
+           android:hint="Birthday"
+
+           />
+    <Button
+        android:layout_weight="1"
+        android:text="Pick"
+        android:id="@+id/pickdateBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+   </LinearLayout>
+    <EditText
+        android:id="@+id/post_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Postcode"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="State:"/>
+    <Spinner
+        android:id="@+id/state_spinner"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <Button
+        android:id="@+id/go_next_BT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Next"/>
+<ProgressBar
+    android:id="@+id/prograss_register"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:indeterminate="true"
+    android:visibility="invisible"
+    />
+</LinearLayout>
